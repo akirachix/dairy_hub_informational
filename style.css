@@ -12,19 +12,324 @@ body {
   background-color: #fffbe9;
   color: black;
   line-height: 1.6;
-  padding: 20px;
+  /* padding: 20px; */
   max-width: 100%;
   overflow-x: hidden;
 
 }
-h1{
+/*  Connect Us */
+
+ :root {
+  --primary-green: #007a4d;
+  --accent-yellow: #ffc72c;
+  --button-green: #007a4d;
+  --button-green-hover: #005f36;
+  --button-outline: #fff;
+  --text-dark: #222;
+  --text-light: #fff;
+  --bg-light: #f9f9f9;
+  --shadow: 0 4px 16px rgba(0,0,0,0.08);
+} 
+
+
+.connect-underline {
+  width: 60px;
+  height: 5px;
+  background: #ffc72c;
+  border-radius: 3px;
+  margin: 0 auto 0.5rem auto;
+  font-weight: bold;
+}
+
+
+.sustainable-section {
+  font-family: 'Albert Sans', sans-serif;
+  max-width: 90vw;
+  margin: 0 auto 2.5rem auto;
+  padding: 2rem 1rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.sustainable-section h2{
+text-align: center;
+}
+
+.sustainable-header {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.sustainable-connect {
+  color: #f7c948;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+.sustainable-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  margin: 0 0 0.7rem 0;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.sustainable-description {
+  color: #444;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.sustainable-readmore {
+  color: #0F7E2C;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.3em;
+  font-size: 0.97em;
+  transition: color 0.2s;
+}
+.sustainable-readmore:hover {
+  color: #388e3c;
+  text-decoration: underline;
+}
+
+.sustainable-images {
+  margin-top: 60px;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 90vw;
+  
+}
+
+.sustainable-images img {
+  width: 100%;
+  max-width: 90vw;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06); 
+  background: #f7f7f7;
+  flex: 1 1 240px; 
+}
+#farmingsite-1{
+max-width: 290px;
+}
+#farmingsite-2{
+max-width: 200vb;
+height: 320px;
+
+}
+
+.whyus-header h2{
+  color: var(--accent-yellow);
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Albert Sans', sans-serif;
+}
+
+.footer {
+  background-color: #136829;
+  padding: 20px;
+  color: #f5efef;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo {
+  flex: 1 1 200px;
+  min-width: 150px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-logo .description {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #faf5f5;
+}
+
+.footer-columns {
+  display: flex;
+  flex: 3 1 500px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column h4 {
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none;
+}
+
+.column ul li {
+  margin-bottom: 8px;
+}
+
+.column ul li a {
+  text-decoration: none;
+  color: #f8f4f4;
+  font-size: 16px;
+}
+
+.column ul li a:hover {
+  color: #007BFF;
+}
+
+hr {
+  margin: 30px 0 15px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.hub-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.footer-bottom p {
+  font-size: 16px;
+  color: #f3efef;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-logo img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 250px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    width: 60px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+  }
+
+  .column h4 {
+    font-size: 12px;
+  }
+
+  .column ul li a {
+    font-size: 11px;
+  }
+
+  .hub-name {
+    font-size: 14px;
+  }
+
+  .footer-bottom p {
+    font-size: 10px;
+  }
+}
+ 
+
+@media (width: 1024px) {
+.sustainable-images{
+  display: flex;
+  max-width: 50%;
+  align-items: end;
+  margin-left: 0%;
+  flex-wrap: nowrap;
+}}
+
+@media (width: 1280px) {
+  .sustainable-images{
+  display: flex;
+  max-width: 50%;
+  align-items: end;
+  margin-left: 0%;
+  flex-wrap: nowrap;
+}
+}
+@media (width: 768px) {
+ .column h4 {
+    font-size: 20px;
+  }
+   .column ul li a {
+    font-size: 19px;
+  }
+  .footer-logo .description {
+  font-size: 19px;
+}
+  
+}
+
+
+
+
+
+/*  Why choose Us */
+#whyus-heading{
     margin-bottom: 10px;
     color: #F4C92E;
     font-size: 50px;
 
 }
-h2 {
+#explore-heading{
   margin-bottom: 10px;
+    color: #F4C92E;
+    font-size: 50px;
 }
 
 .about-underline {
@@ -58,7 +363,6 @@ h2 {
   background: white;
   padding: 1px;
   border-radius: 12px;
-  /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
   text-align: center;
 }
 
@@ -110,35 +414,20 @@ h2 {
   margin-bottom: 10px;
 }
 
-
-/* .photo-screenshot-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-  padding: 0 10px;
-} */
-
 .dairy-app {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   justify-items: center;
   width: 100%;
-  /* max-width: 1000px; */
+ 
 }
 
 #dairy-app-img {
   width: 20vw;
   height: 80vh;
   border-radius: 12px;
-  /* box-shadow: 0 4px 8px rgba(0,0,0,0.2); */
+  
 }
-
-
-/* .screenshot-photo:nth-child(2) {
-  justify-self: center;
-  align-self: center;
-} */
-
 
 .download-btn {
   margin: 30px auto;
@@ -157,10 +446,10 @@ h2 {
 }
 
 @media (max-width: 450px){
-    h1{
+    #explore-heading{
     font-size: 30px;
   }
-  h2{
+  #whyus-heading{
     font-size: 30px;
   }
  #dairy-app-img {
@@ -189,10 +478,10 @@ h2 {
  }
 }
 @media (min-width:451px) and (max-width: 768px) {
-    h1{
+ #explore-heading{
     font-size: 30px;
   }
-  h2{
+  #whyus-heading{
     font-size: 30px;
   }
  #dairy-app-img {
@@ -221,10 +510,10 @@ h2 {
  }
 }
 @media (min-width:767px) and (max-width: 900px) {
-     h1{
+#explore-heading{
     font-size: 30px;
   }
-  h2{
+  #whyus-heading{
     font-size: 30px;
   }
  #dairy-app-img {
@@ -255,10 +544,11 @@ h2 {
 }
 
 @media (min-width:901px) and (max-width: 1024px) {
-     h1{
+
+  #explore-heading{
     font-size: 30px;
   }
-  h2{
+  #whyus-heading{
     font-size: 30px;
   }
  #dairy-app-img {
@@ -287,10 +577,10 @@ h2 {
  }
 }
 @media (min-width:1025px) and (max-width: 1300px) {
-      h1{
-    font-size: 40px;
+  #explore-heading{
+    font-size: 30px;
   }
-  h2{
+  #whyus-heading{
     font-size: 30px;
   }
  #dairy-app-img {
