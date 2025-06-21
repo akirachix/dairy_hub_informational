@@ -1,3 +1,24 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+body {
+  font-family: sans-serif;
+  background-color: #fffbe9;
+  color: black;
+  line-height: 1.6;
+  /* padding: 20px; */
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+/*  Connect Us */
+
  :root {
   --primary-green: #007a4d;
   --accent-yellow: #ffc72c;
@@ -295,6 +316,299 @@ hr {
 }
 
 
+
+
+
+/*  Why choose Us */
+#whyus-heading{
+    margin-bottom: 10px;
+    color: #F4C92E;
+    font-size: 50px;
+
+}
+#explore-heading{
+  margin-bottom: 10px;
+    color: #F4C92E;
+    font-size: 50px;
+}
+
+.about-underline {
+  width: 60px;
+  height: 4px;
+  background-color: #F4C92E;
+  margin: 10px auto;
+}
+
+
+.whyus-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.whyus-subtitle {
+  color: black;
+  font-size: 1rem;
+}
+
+
+.whyus-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 30px;
+  padding: 0 5px;
+}
+
+.whyus-card {
+  background: white;
+  padding: 1px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.whyus-card img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+#Maclik-salt{
+    width: 50%;
+    height: 290px;
+
+}
+
+.whyus-card-title {
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+
+.whyus-action {
+  margin-top: 60px;
+}
+
+.whyus-btn { 
+  background-color: #1c7c54;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  height: 100px;
+  padding:20px;
+  
+}
+
+#whyus-btn:hover {
+  background-color: #006B49;
+}
+
+
+#explore {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.explore-header h2 {
+  color: #c9a600;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.dairy-app {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  justify-items: center;
+  width: 100%;
+ 
+}
+
+#dairy-app-img {
+  width: 20vw;
+  height: 80vh;
+  border-radius: 12px;
+  
+}
+
+.download-btn {
+  margin: 30px auto;
+  padding: 20px 40px;
+  background-color: #006B49;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+
+.download-btn:hover {
+  background-color: #005f47;
+}
+
+@media (max-width: 450px){
+    #explore-heading{
+    font-size: 30px;
+  }
+  #whyus-heading{
+    font-size: 30px;
+  }
+ #dairy-app-img {
+  width: 50vw;
+  height: 45vh;
+  max-width: 280px;
+  border-radius: 12px;
+}
+
+ .dairy-app{
+    flex-direction: row;
+    gap: 20px;
+ }
+  #Maclik-salt{
+    width: 60%;
+    height: 130px;
+
+ }
+ .download-btn{
+   padding: 15px;
+  font-size: 15px;
+ }
+ .whyus-btn{
+  padding: 15px;
+  font-size: 15px;
+ }
+}
+@media (min-width:451px) and (max-width: 768px) {
+ #explore-heading{
+    font-size: 30px;
+  }
+  #whyus-heading{
+    font-size: 30px;
+  }
+ #dairy-app-img {
+  width: 30vw;
+  height: 50vh;
+  max-width: 280px;
+  border-radius: 12px;
+}
+
+ .dairy-app{
+ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ gap: 20px;
+ }
+  #Maclik-salt{
+    width: 60%;
+    height: 100px;
+
+ }
+ .download-btn{
+   padding: 15px;
+  font-size: 15px;
+ }
+ .whyus-btn{
+  padding: 15px;
+  font-size: 15px;
+ }
+}
+@media (min-width:767px) and (max-width: 900px) {
+#explore-heading{
+    font-size: 30px;
+  }
+  #whyus-heading{
+    font-size: 30px;
+  }
+ #dairy-app-img {
+  width: 30vw;
+  height: 40vh;
+  max-width: 280px;
+  border-radius: 12px;
+}
+
+ .dairy-app{
+ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ gap: 20px;
+ }
+  #Maclik-salt{
+    width: 60%;
+    height: 100px;
+
+ }
+ .download-btn{
+   padding: 15px;
+  font-size: 15px;
+ }
+ .whyus-btn{
+  padding: 15px;
+  font-size: 15px;
+ }
+
+}
+
+@media (min-width:901px) and (max-width: 1024px) {
+
+  #explore-heading{
+    font-size: 30px;
+  }
+  #whyus-heading{
+    font-size: 30px;
+  }
+ #dairy-app-img {
+  width: 30vw;
+  height: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+}
+
+ .dairy-app{
+ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ gap: 20px;
+ }
+  #Maclik-salt{
+    width: 60%;
+    height: 100px;
+
+ }
+ .download-btn{
+   padding: 15px;
+  font-size: 15px;
+ }
+ .whyus-btn{
+  padding: 15px;
+  font-size: 15px;
+ }
+}
+@media (min-width:1025px) and (max-width: 1300px) {
+  #explore-heading{
+    font-size: 30px;
+  }
+  #whyus-heading{
+    font-size: 30px;
+  }
+ #dairy-app-img {
+  width: 20vw;
+  height: 60vh;
+  max-width: 280px;
+  border-radius: 12px;
+}
+
+ .dairy-app{
+ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ gap: 20px;
+ }
+  #Maclik-salt{
+    width: 60%;
+    height: 100px;
+
+ }
+ .download-btn{
+   padding: 20px;
+  font-size: 20px;
+ }
+ .whyus-btn{
+  padding: 25px;
+  font-size: 20px;
+ }
+
+}
 
 
 
